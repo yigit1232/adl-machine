@@ -1,0 +1,7 @@
+.idea
+venv
+package.json
+package-lock.json
+tailwind.config.js
+db.sqlite3
+node_modules

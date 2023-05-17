@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block title %}Adl Makina{% endblock %}
+{% block description %}Adl Makina{% endblock %}
+
+{% block body %}
+{% include 'components/jumbotron.html' %}
+   <div class="w-full flex justify-center mb-10">
+        <div class="container">
+            <section class="mt-10">
+                <div class="text-center">
+                    <p class="text-slate-500 text-[15px] mb-3">EN YÜKSEK SEVİYEDE HASSASİYET</p>
+                    <h2 class="text-sky-700 text-4xl font-medium">BİZİM ÜRÜNLERİMİZ</h2>
+                </div>
+                <div class="mt-10 cards flex justify-between flex-wrap gap-5">
+                        {% include 'components/card.html' %}
+                        {% include 'components/card.html' %}
+                        {% include 'components/card.html' %}
+                        {% include 'components/card.html' %}
+                        {% include 'components/card.html' %}
+                        {% include 'components/card.html' %}
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+{% endblock %}
