@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-bt1il-$g-4-av76mm1^fr@7-z^&455+#vz*%oz_39m*z4oa*$-
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
@@ -98,6 +98,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
     BASE_DIR / 'static'
+]
+STATIC_ROOT = [
+    BASE_DIR / 'staticfiles'
 ]
 
 # Default primary key field type
