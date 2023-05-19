@@ -1,7 +1,9 @@
+{% load static %}
 {% for image in images %}
+
 <article class="rounded">
     <div>
-        <a href="/static/images/product/{{ image }}" data-lightbox="roadtrip" class="rounded cursor-pointer object-cover w-full">
+        <a href="{% static 'images' %}{{ image }}" data-lightbox="roadtrip" class="rounded cursor-pointer object-cover w-full">
             <img src="/static/images/product/{{ image }}" class="shadow-xl border" alt="C46">
         </a>
     </div>
