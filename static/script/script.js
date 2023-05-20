@@ -1,3 +1,9 @@
+lightbox.option({
+        'resizeDuration': 20,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'disableScrolling':true,
+})
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,

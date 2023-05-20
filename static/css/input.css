@@ -71,17 +71,51 @@ body{
 .list-quality li{
     margin-bottom: 5px;
 }
-.email-box{
-    position: relative;
-    left: 80%;
-    cursor: pointer;
-    transition: 500ms all;
+.contact-toggle{
+    padding: 10px 10px 10px 87px !important;
+     transition: right 0.4s ease-in-out !important;
+    -o-transition: right 0.4s ease-in-out !important;
+    -ms-transition: right 0.4s ease-in-out !important;
+    -moz-transition: right 0.4s ease-in-out !important;
+    -webkit-transition: right 0.4s ease-in-out !important;
 }
-.email-box:hover{
-    left: 0;
+
+.contact-toggle:hover{
+    right: 198px;
 }
 .cards{
     transition: 200ms all;
+}
+@media screen and (max-width: 1201px){
+    #header img{
+        width: 400px !important;
+    }
+    .header-nav a{
+        font-size: 13px !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .cards{
+        justify-content: center !important;
+    }
+    .cards article{
+        width: 80%;
+    }
+    #header .container{
+        flex-direction: column !important;
+    }
+    .email-box{
+        padding: 5px !important;
+        left: 85% !important;
+    }
+    ._banner .container{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px;
+    }
+    ._banner .container a{
+        padding: 7px 14px !important;
+    }
 }
 @media screen and (max-width:568px) {
     .jumbotron-text{
@@ -102,11 +136,77 @@ body{
         gap: 10px;
     }
 }
-@media screen and (max-width:768px) {
-    .cards{
-        justify-content: center !important;
-    }
-    .cards article{
-        width: 80%;
-    }
+
+
+.toggle-contact {
+    position: fixed;
+    right: -198px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 999
+}
+
+.toggle-contact li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none
+}
+
+.toggle-contact li:first-child {
+    margin-bottom: 15px
+}
+
+.toggle-contact li a {
+    position: relative;
+    display: flex;
+    padding: 10px 10px 10px 87px;
+    background-color: #fff;
+    font-size: 17px;
+    width: 265px;
+    right: 0;
+    height: 60px;
+    transition: right 0.4s ease-in-out;
+    -o-transition: right 0.4s ease-in-out;
+    -ms-transition: right 0.4s ease-in-out;
+    -moz-transition: right 0.4s ease-in-out;
+    -webkit-transition: right 0.4s ease-in-out;
+    border-top: 2px solid #0369A1;
+    border-bottom: 2px solid #0369A1;
+    align-items: center
+}
+
+.toggle-contact li a span {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    background: #0369A1;
+    border-top: 2px solid #0369A1;
+    border-bottom: 2px solid #0369A1;
+    top: 0;
+    height: 56px;
+    width: 67px;
+    font-size: 30px;
+    color: #fff
+}
+
+.toggle-contact li a span svg {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #fff!important
+}
+
+.toggle-contact li a:hover {
+    right: 198px
 }
