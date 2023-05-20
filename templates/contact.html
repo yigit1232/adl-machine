@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block title %}İletişim{% endblock %}
+{% block description %}İletişim{% endblock %}
+
+{% block body %}
+    <section class="w-full h-[200px] bg-image">
+        <div class="jumbotron-bg">
+            <div class="flex justify-center h-full items-center">
+                <div class="container flex justify-center items-center">
+                    <h2 class="text-white font-medium tracking-wide text-4xl leading-tight">İletişim</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full flex justify-center mb-10 mt-10">
+        <div class="container flex justify-between gap-10">
+            <div>
+                <form action="" class="grid grid-cols-2 flex-col gap-5">
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Firma Adı <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Ad Soyad <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Telefon <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Cep Telefon <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">E-mail <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Web Adresi <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Faks <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Mesajınız <span class="text-red-700">*</span> </label>
+                        <textarea name="" id="" cols="30" class="border shadow rounded py-1 px-3" rows="1"></textarea>
+                    </div>
+                    <div><button class="py-2 px-6 bg-sky-700 rounded text-white">Gönder</button></div>
+                </form>
+            </div>
+            <div>
+                <div><h2 class="text-2xl text-slate-700">İletişim Bilgileri</h2></div>
+                <div class="mt-2 text-slate-600">
+                    <h2 class="mb-2">Adres: 	Kemalpaşa Mah. 7416 Sokak No:26A Bornova - İzmir / TÜRKİYE</h2>
+                    <h2 class="mb-2">Telefon: +90 ( 232 ) 4783057</h2>
+                    <h2 class="mb-2">Faks: +90 ( 232 ) 4783057</h2>
+                    <h2>Email: <a href="mailto:info@adlmakina.com" class="text-sky-700">info@adlmakina.com</a> </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -7,4 +7,5 @@ urlpatterns = [
     path('',views.index,name='index'),
     path('urunler/',views.products,name='products'),
     path('kalite/',views.quality,name='quality'),
+    path('iletisim/',views.contact,name='contact')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
