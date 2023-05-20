@@ -1,16 +1,19 @@
-    <div class="w-full flex justify-center items-center">
-        <img src="/static/images/logo.png" width="600" alt="Adl Makina Logo">
-    </div>
-    <header class="w-full flex items-center justify-center">
-        <div class="container flex py-5 justify-end">
-            <nav class="header-nav">
-                <ul>
-                    <li><a class="{% if request.path == '/' %} border-b-2 border-sky-700 !text-sky-700{% endif %} text-slate-600 hover:border-b-2   hover:border-sky-700 p-2 hover:text-sky-700 font-normal" href="{% url 'index' %}">Anasayfa</a></li>
-                    <li><a class="{% if request.path == '' %} border-b-2 border-sky-700 !text-sky-700{% endif %} text-slate-600 hover:border-b-2 hover:border-sky-700 p-2 hover:text-sky-700 font-normal" href="">Üretim</a></li>
-                    <li><a class="{% if request.path == '/urunler/' %} border-b-2 border-sky-700 !text-sky-700{% endif %} text-slate-600 hover:border-b-2 hover:border-sky-700 p-2 hover:text-sky-700 font-normal" href="{% url "products" %}">Ürünler</a></li>
-                    <li><a class="{% if request.path == '/kalite/' %} border-b-2 border-sky-700 !text-sky-700{% endif %} text-slate-600 hover:border-b-2 hover:border-sky-700 p-2 hover:text-sky-700 font-normal" href="{% url "quality" %}">Kalite</a></li>
-                    <li><a class="{% if request.path == '' %} border-b-2 border-sky-700 !text-sky-700{% endif %} text-slate-600 hover:border-b-2 hover:border-sky-700 p-2 hover:text-sky-700 font-normal" href="">İletişim</a></li>
-                </ul>
-            </nav>
+
+<header class="w-full flex items-center justify-center">
+
+    <div class="container py-3 flex justify-between items-center">
+        <div>
+            <img src="/static/images/logo.png" width="500" alt="Adl Makina Logo">
         </div>
-    </header>
+        <nav class="header-nav">
+            <ul>
+                <li><a class="{% if request.path == '/' %} !text-sky-700 {% endif %}" href="{% url 'index' %}">Anasayfa</a></li>
+                <li><a class="{% if request.path == '' %} !text-sky-700 {% endif %}" href="">Üretim</a></li>
+                <li><a class="{% if request.path == '/urunler/' %} !text-sky-700 {% endif %}" href="{% url "products" %}">Ürünler</a></li>
+                <li><a class="{% if request.path == '/kalite/' %} !text-sky-700 {% endif %}" href="{% url "quality" %}">Kalite</a></li>
+                <li><a class="{% if request.path == '' %} !text-sky-700 {% endif %}" href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>

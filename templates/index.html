@@ -3,7 +3,8 @@
 {% block description %}Adl Makina{% endblock %}
 
 {% block body %}
-{% include 'components/jumbotron.html' %}
+
+{% include 'components/slider.html' %}
    <div class="w-full flex justify-center mb-10">
         <div class="container">
             <section class="mt-10">
@@ -21,7 +22,9 @@
                 </div>
             </section>
         </div>
+
     </div>
 
+    {% include 'components/toggle_contact.html' %}
 
 {% endblock %}
