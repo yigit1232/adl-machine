@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block title %}Üretim{% endblock %}
+{% block description %}Üretim{% endblock %}
+
+{% block body %}
+
+<section class="w-full h-[200px] bg-image">
+    <div class="jumbotron-bg">
+        <div class="flex justify-center h-full items-center">
+            <div class="container flex justify-center items-center">
+                <h2 class="text-white font-medium tracking-wide text-4xl leading-tight">Üretim</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-full flex justify-center mb-10 mt-10">
+    <div class="container">
+        <section class="grid grid-cols-3 gap-10 production-card">
+            {% include 'components/production_card.html' %}
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}

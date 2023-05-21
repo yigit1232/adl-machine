@@ -11,3 +11,6 @@ def quality(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def production(request):
+    return render(request,'production.html')

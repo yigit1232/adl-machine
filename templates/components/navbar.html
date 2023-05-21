@@ -8,7 +8,7 @@
         <nav class="header-nav">
             <ul>
                 <li><a class="{% if request.path == '/' %} !text-sky-700 {% endif %}" href="{% url 'index' %}">Anasayfa</a></li>
-                <li><a class="{% if request.path == '' %} !text-sky-700 {% endif %}" href="">Üretim</a></li>
+                <li><a class="{% if request.path == '/uretim/' %} !text-sky-700 {% endif %}" href="{% url "production" %}">Üretim</a></li>
                 <li><a class="{% if request.path == '/urunler/' %} !text-sky-700 {% endif %}" href="{% url "products" %}">Ürünler</a></li>
                 <li><a class="{% if request.path == '/kalite/' %} !text-sky-700 {% endif %}" href="{% url "quality" %}">Kalite</a></li>
                 <li><a class="{% if request.path == '/iletisim/' %} !text-sky-700 {% endif %}" href="{% url "contact" %}">İletişim</a></li>
