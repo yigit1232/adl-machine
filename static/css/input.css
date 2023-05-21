@@ -111,6 +111,9 @@ body{
     .cards article{
         width: 80%;
     }
+    iframe{
+        width: 100% !important;
+    }
     #header .container{
         flex-direction: column !important;
     }
