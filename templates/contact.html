@@ -16,16 +16,17 @@
     <div class="w-full flex justify-center mb-10 mt-10">
         <div class="container flex justify-between gap-10" id="contact">
             <div>
-                <form action="" class="grid grid-cols-2 flex-col gap-5" id="form-contact">
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Firma Adı <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Ad Soyad <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Telefon <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Cep Telefon <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">E-mail <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Web Adresi <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
-                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Faks <span class="text-red-700">*</span> </label> <input name="" class="border shadow rounded py-1 px-3" type="text"/></div>
+                <form action="{% url "contact" %}" method="POST" class="grid grid-cols-2 flex-col gap-5" id="form-contact">
+                    {% csrf_token %}
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Firma Adı <span class="text-red-700">*</span> </label> <input name="company" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Ad Soyad <span class="text-red-700">*</span> </label> <input name="name" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Telefon <span class="text-red-700">*</span> </label> <input name="phone" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Cep Telefon <span class="text-red-700">*</span> </label> <input name="mobile_phone" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">E-mail <span class="text-red-700">*</span> </label> <input name="email" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Web Adresi <span class="text-red-700">*</span> </label> <input name="website" class="border shadow rounded py-1 px-3" type="text"/></div>
+                    <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Faks <span class="text-red-700">*</span> </label> <input name="fax" class="border shadow rounded py-1 px-3" type="text"/></div>
                     <div class="flex flex-col"><label class="text-slate-700 mb-2" for="">Mesajınız <span class="text-red-700">*</span> </label>
-                        <textarea name="" id="" cols="30" class="border shadow rounded py-1 px-3" rows="1"></textarea>
+                        <textarea name="subject" id="" cols="30" class="border shadow rounded py-1 px-3" rows="1"></textarea>
                     </div>
                     <div><button class="py-2 px-6 bg-sky-700 rounded text-white">Gönder</button></div>
                 </form>
