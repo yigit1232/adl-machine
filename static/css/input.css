@@ -26,16 +26,29 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/static/images/03_Mood_Freisteller_Produkte.jpg");
   background-size: cover;
     background-position: center;
     position: relative;
+}
+.swiper-slider-image{
+    background-image: url("/static/images/slider/SAM_1894.webp");
+
+}
+.swiper-slider-image-1{
+    background-image: url("/static/images/slider/SAM_1903.webp");
+
+}
+.swiper-slider-image-2{
+    background-image: url("/static/images/slider/SAM_1931shoplu.webp");
+}
+.swiper-slider-image-3{
+    background-image: url("/static/images/slider/SAM_1941.webp");
 }
 .bg-image-color{
     position: absolute;
     width: 100%;
     height: 100%;
-        background-color: rgba(51,51,51,.7);
+    background-color: rgba(51,51,51,.7);
 
 }
 
