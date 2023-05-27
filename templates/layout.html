@@ -17,10 +17,11 @@
     {% block css %}{% endblock %}
     <title>{% block title %}{% endblock %} - ADL Makina</title>
 </head>
-<body>
-    {% include 'components/navbar.html' %}
-    {% block body %}{% endblock %}
-    {% include 'components/footer.html' %}
+<body class="h-full">
+        {% include 'components/navbar.html' %}
+        {% block body %}{% endblock %}
+        {% include 'components/footer.html' %}
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
