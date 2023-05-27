@@ -152,6 +152,9 @@ body{
     #contact{
         flex-direction: column !important;
     }
+    .sub-content-box{
+        flex-direction: column !important;
+    }
     .production-card{
         grid-template-columns:repeat(1, minmax(0, 1fr)) !important;
         place-items: center !important;
@@ -180,6 +183,9 @@ body{
     }
     #form-contact{
         grid-template-columns:repeat(1, minmax(0, 1fr)) !important;
+    }
+    .form-button{
+        width: 100% !important;
     }
 }
 
