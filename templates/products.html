@@ -1,4 +1,5 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block title %}Üretim{% endblock %}
 {% block description %}Üretim{% endblock %}
 
@@ -29,4 +30,8 @@
        </div>
    </div>
 
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'script/lightbox.min.js' %}"></script>
 {% endblock %}
