@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+    {% block css %}<link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">{% endblock %}
     <title>{% block title %}{% endblock %} - ADL Makina</title>
 </head>
 <body>
@@ -24,9 +24,9 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    {% block script %}{% endblock %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="{% static 'script/script.js' %}"></script>
+    {% block script %}{% endblock %}
 
 </body>
 </html>

@@ -1,9 +1,4 @@
-lightbox.option({
-        'resizeDuration': 20,
-        'wrapAround': true,
-        'alwaysShowNavOnTouchDevices': true,
-        'disableScrolling':true,
-})
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
@@ -19,6 +14,5 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 $(".menu").on("click",function(){
-    console.log("hello world")
     $(".menu-content").toggle()
 })

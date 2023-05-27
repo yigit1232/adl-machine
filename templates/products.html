@@ -3,6 +3,11 @@
 {% block title %}Üretim{% endblock %}
 {% block description %}Üretim{% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+
+{% endblock %}
+
 {% block  body %}
 <section class="w-full h-[200px] bg-image">
     <div class="jumbotron-bg">
@@ -34,4 +39,12 @@
 
 {% block script %}
 <script src="{% static 'script/lightbox.min.js' %}"></script>
+    <script>
+    lightbox.option({
+        'resizeDuration': 20,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true,
+        'disableScrolling':true,
+})
+    </script>
 {% endblock %}
