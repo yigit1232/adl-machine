@@ -44,3 +44,9 @@ def contact(request):
 
 def production(request):
     return render(request,'production.html')
+
+def about(request):
+    return render(request,'about.html')
+
+def vision(request):
+    return render(request,'vision.html')

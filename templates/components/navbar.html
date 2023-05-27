@@ -8,9 +8,15 @@
         <nav class="header-nav">
             <ul>
                 <li><a class="{% if request.path == '/' %} !text-sky-700 {% endif %}" href="{% url 'index' %}">Anasayfa</a></li>
-                <li><a class="{% if request.path == '/uretim/' %} !text-sky-700 {% endif %}" href="{% url "production" %}">Üretim</a></li>
+                <li class="relative"><a class="menu cursor-pointer">Kurumsal <i class="uil uil-angle-down"></i></a>
+                <ul class="absolute hidden menu-content left-0 flex flex-col gap-1 top-10 rounded bg-white border shadow-sm z-40">
+                    <li><a class="hover:bg-slate-200" href="{% url "about" %}">HAKKIMIZDA</a></li>
+                    <li><a class="hover:bg-slate-200" href="{% url "vision" %}">VİZYON&MİSYON</a></li>
+                    <li><a class="hover:bg-slate-200" href="">TEZGAH PARKURU</a></li>
+                    <li><a class="hover:bg-slate-200" href="{% url "quality" %}">KALİTE SİSTEM YÖNETİMİ</a></li>
+                </ul>
+                </li>
                 <li><a class="{% if request.path == '/urunler/' %} !text-sky-700 {% endif %}" href="{% url "products" %}">Ürünler</a></li>
-                <li><a class="{% if request.path == '/kalite/' %} !text-sky-700 {% endif %}" href="{% url "quality" %}">Kalite</a></li>
                 <li><a class="{% if request.path == '/iletisim/' %} !text-sky-700 {% endif %}" href="{% url "contact" %}">İletişim</a></li>
             </ul>
         </nav>

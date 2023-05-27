@@ -17,3 +17,8 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+$(".menu").on("click",function(){
+    console.log("hello world")
+    $(".menu-content").toggle()
+})

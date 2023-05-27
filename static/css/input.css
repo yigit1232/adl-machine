@@ -21,7 +21,7 @@ body{
 
 .swiper-slide {
   text-align: center;
-  height: 600px;
+  height: 650px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(51,51,51,.7);
+    background-color: rgba(51, 51, 51, 0.22);
 
 }
 
@@ -58,7 +58,11 @@ body{
   height: 100%;
   object-fit: cover;
 }
-
+.menu-content a{
+    padding: 10px !important;
+    display: block;
+    font-size: 15px !important;
+}
 .swiper {
   margin-left: auto;
   margin-right: auto;
