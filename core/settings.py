@@ -80,11 +80,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.office365.com'  # E-posta sağlayıcınızın SMTP sunucusu
-EMAIL_PORT = 587  # E-posta sağlayıcınızın SMTP portu
+EMAIL_HOST = 'smtp.yandex.com.tr'  # E-posta sağlayıcınızın SMTP sunucusu
+EMAIL_PORT = 465  # E-posta sağlayıcınızın SMTP portu
 EMAIL_USE_TLS = True  # TLS (Transport Layer Security) kullanıyor mu?
-EMAIL_HOST_USER = 'yigit_ali_ucun@hotmail.com'  # E-posta adresiniz
-EMAIL_HOST_PASSWORD = 'Catapata4321'  # E-posta şifreniz
+EMAIL_HOST_USER = 'iletisim@adlmakina.com'  # E-posta adresiniz
+EMAIL_HOST_PASSWORD = 'Adl1905$'  # E-posta şifreniz
 
 
 # Internationalization
