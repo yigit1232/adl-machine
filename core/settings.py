@@ -82,7 +82,7 @@ AUTH_PASSWORD_VALIDATORS = [
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.com.tr'  # E-posta sağlayıcınızın SMTP sunucusu
 EMAIL_PORT = 465  # E-posta sağlayıcınızın SMTP portu
-EMAIL_USE_TLS = True  # TLS (Transport Layer Security) kullanıyor mu?
+EMAIL_USE_TLS = False  # TLS (Transport Layer Security) kullanıyor mu?
 EMAIL_HOST_USER = 'iletisim@adlmakina.com'  # E-posta adresiniz
 EMAIL_HOST_PASSWORD = 'Adl1905$'  # E-posta şifreniz
 
