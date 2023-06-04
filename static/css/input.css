@@ -149,6 +149,9 @@ body{
     ._banner .container a{
         padding: 7px 14px !important;
     }
+    .bench-cards{
+        grid-template-columns:repeat(1, minmax(0, 1fr)) !important;
+    }
     #contact{
         flex-direction: column !important;
     }
