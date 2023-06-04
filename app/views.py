@@ -50,3 +50,6 @@ def about(request):
 
 def vision(request):
     return render(request,'vision.html')
+
+def bench(request):
+    return render(request,'bench.html')

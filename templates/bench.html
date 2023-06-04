@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block title %}
+Tezgah Parkuru
+{% endblock %}
+{% block description %}
+Tezgah Parkuru
+{% endblock %}
+
+{% block body %}
+<section class="w-full h-[200px] bg-image">
+    <div class="jumbotron-bg">
+        <div class="flex justify-center h-full items-center">
+            <div class="container flex justify-center items-center">
+                <h2 class="text-white font-medium tracking-wide text-4xl leading-tight">Tezgah Parkuru</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-full flex justify-center  mb-10 mt-10">
+    <div class="container">
+        <section class="grid grid-cols-3 bench-cards place-self-center gap-10">
+            {% include 'components/bench_card.html' %}
+        </section>
+    </div>
+</div>
+{% endblock %}

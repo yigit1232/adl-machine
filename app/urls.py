@@ -11,5 +11,6 @@ urlpatterns = [
     path('kurumsal/hakkimizda/',views.about,name='about'),
     path('kurumsal/vizyonumuz-misyonumuz/',views.vision,name='vision'),
     path('kurumsal/kalite/', views.quality, name='quality'),
+    path('kurumsal/tezgah-parkuru/', views.bench, name='bench'),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

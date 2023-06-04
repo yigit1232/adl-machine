@@ -188,7 +188,10 @@ body{
         width: 100% !important;
     }
 }
-
+.bench-cards img{
+    height: 300px !important;
+    width: 100%;
+}
 
 .toggle-contact {
     position: fixed;
